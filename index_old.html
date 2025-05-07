@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>CaetanoBarberShop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CaetanoBarberShop</h1>
+        <h2>Agendar Corte</h2>
+        <form action="guardar.php" method="post">
+            
+            <label>Nome:<br>
+                <input type="text" name="nome" required>
+            </label>
+            <br><br>
+
+            <label>Serviço:<br>
+                <select name="servico" required>
+                    <option value="Corte Masculino">Corte Masculino</option>
+                    <option value="Barba com toalha quente ">Barba com toalha quente</option>
+                    <option value="Barba">Barba</option>
+                    <option value="lavagem de cabelo">lavagem de cabelo</option>
+                </select>
+            </label>
+            <br><br>
+
+            <label>Data:<br>
+                <input type="date" name="data" required>
+            </label>
+            <br><br>
+
+            <label>Hora:
+                <select name="hora" required>
+                  <option value="10:00">10:00</option>
+                  <option value="11:00">11:00</option>
+                  <option value="12:00">12:00</option>
+                  <option value="13:00">13:00</option>
+                  <option value="16:00">16:00</option>
+                  <option value="17:00">17:00</option>
+                  <option value="18:00">18:00</option>
+                  <option value="19:00">19:00</option>
+                </select>
+                </label>                
+            <br><br>
+
+            <label>Contacto:<br>
+                <input type="text" name="contacto" required>
+            </label>
+            <br><br>
+
+            <button type="submit">Agendar</button>
+        </form>
+    </div>
+</body>
+</html>
